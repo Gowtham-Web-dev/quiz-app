@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROUND-4 | TEAM-A</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+     <style>
+body{
+    background-color: #004085;
+}
+
+
+.quiz_box header{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+
+.quiz_box header .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.quiz_box header .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: #007bff;
+}
+
+section{
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+}
+
+section .que_text{
+    font-size: 25px;
+    font-weight: 600;
+}
+footer{
+    height: 80px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+
+footer .total_que span{
+    display: flex;
+    user-select: none;
+}
+
+footer .total_que span p{
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+footer .total_que span p:first-child{
+    padding-left: 0px;
+}
+
+footer .butto1{
+    height: 60px;
+    padding: 2% 13px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+    margin-right:0px ;
+    color:#000000;
+    line-height: 10px;
+    pointer-events: auto;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+    display: flex;
+}
+div.btn.btn-primary.btn-lg,a{
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+}
+
+footer button:hover{
+    background: #0263ca;
+}
+       </style>wwwwwwwwwww
+</head>
+<body>
+    <div class="quiz_box">
+        <header>
+            <div class="title">Visual Round</div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                The below images shows CEO of particular company.Match the person with their company.
+                <img src="../../asserts/images/round-3/6.png" width="500px" heigth="500px">
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+                <h3 id="ans1"></h3>
+            </div>
+            <div class="butto1">
+                <div class="btn btn-primary btn-lg" role="button" onclick="answer()">Answer</div>
+                <a href="../round-3/round3.html" class="btn btn-primary btn-lg" role="button">Back</a></div>
+        </footer>
+        <div></div>
+    </div>
+    <script>
+        function answer(){
+            document.getElementById("ans1").innerText="Ans : 1) C 2) E 3) B 4) A";
+        }
+    </script>
+</body>
+</html>

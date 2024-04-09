@@ -1,0 +1,197 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+
+body {
+    min-height: 100vh;
+    font-size: 0.875rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("../../../images/round-2/round-2-8Options.jpg") center/cover no-repeat fixed;
+    position: relative;
+    /* animation */
+    overflow-x: hidden;
+}
+
+.top {
+    width: 100vw;
+    height: fit-content;
+    /* background-color: wheat; */
+    /* margin-bottom: 1rem; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle {
+    width: 100vw;
+    height: fit-content;
+    /* background-color: wheat; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bottom {
+    width: 100vw;
+    height: fit-content;
+    /* background-color: wheat; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: wheat;
+} */
+
+img {
+    border-radius: 2rem;
+    height: 150px;
+    width: 150px;
+}
+
+img:hover {
+
+
+    /* -webkit-box-shadow:0px 0px 50px 20px #ff0000 ;
+-moz-box-shadow:0px 0px 50px 20px #ff0000 ;
+box-shadow:0px 0px 50px 20px #ff0000 ; */
+
+
+    -webkit-box-shadow: 0px 0px 50px 20px #ff0080;
+    -moz-box-shadow: 0px 0px 50px 20px #ff0080;
+    box-shadow: 0px 0px 50px 20px #ff0080;
+
+}
+
+.footer {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+.popup-button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 6px;
+    /* margin: 10px; */
+    padding: 1em 3em;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.popup-button:hover {
+    background-position: right center;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.right {
+    /* background-color: wheat; */
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+
+}
+
+.header-timer {
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+    /* text-decoration: none; */
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 6px;
+    /* margin: 10px; */
+    padding: 1em 3em;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
+    transition: 0.5s;
+    font-size: 1.2rem;
+}
+
+.sm {
+    font-weight: 800;
+    font-size: .75rem;
+    width: 50%;
+    text-align: center;
+}
+
+.right .answer-container {
+    /* background-color: wheat; */
+    margin-bottom: 10px;
+}
+
+.right .answer-container .answer {
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+    /* text-decoration: none; */
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 6px;
+    /* margin: 10px; */
+    padding: 1em 3em;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+    background-image: linear-gradient(to right, #895cf2 0%, #ffabf4 50%, #895cf2 100%);
+    transition: 0.5s;
+    font-size: 1.2rem;
+}
+
+.right .timer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footerbutton{
+    width:fit-content;
+    text-align: center;
+    padding: 0;
+    
+
+}

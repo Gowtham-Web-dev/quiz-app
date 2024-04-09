@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROUND-4 | TEAM-B</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+body{
+    background-color: #004085;
+}
+.quiz_box header{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+
+.quiz_box header .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz_box header .timer{
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+}
+
+.quiz_box header .timer .time_left_txt{
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+
+.quiz_box header .timer .timer_sec{
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #343a40;
+    border: 1px solid #343a40;
+    user-select: none;
+}
+
+.quiz_box header .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: #007bff;
+}
+
+section{
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+}
+
+section .que_text{
+    font-size: 25px;
+    font-weight: 600;
+}
+footer{
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid lightgrey;
+}
+
+footer .total_que span{
+    display: flex;
+    user-select: none;
+}
+
+footer .total_que span p{
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+footer .total_que span p:first-child{
+    padding-left: 0px;
+}
+
+footer .butto1{
+    height: fit-content;
+    padding: 20px 13px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+    margin-right:0px ;
+    color:#fff;
+    line-height: 10px;
+    pointer-events: auto;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+    display: flex;
+}
+.butto1 a
+{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+div.btn.btn-primary.btn-lg,a{
+    margin: 10px;
+    background:transparent;
+    border: 1px solid black;
+    color: black;
+    width: 150px;
+    height: fit-content;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+}
+div.btn.btn-primary.btn-lg::before
+{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 50%;
+    position: absolute;
+    background-color: pink;
+    transform: .5s;
+    z-index: -1;
+    transition: .5s;
+    border-radius: 5px 5px 0px 0px;
+}
+div.btn.btn-primary.btn-lg::after
+{
+    content: '';
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 50%;
+    position: absolute;
+    background-color: skyblue;
+    transform: .5s;
+    z-index: -1;
+    transition: .5s;
+    border-radius: 0x 0px 5px 5px;
+}
+div.btn.btn-primary.btn-lg:hover:before
+{
+    width: 100%;
+}
+div.btn.btn-primary.btn-lg:hover:after
+{
+    width: 100%;
+}
+div.btn.btn-primary.btn-lg:hover
+{
+    text-shadow: 0px 0px 1px black;
+}
+.que{
+    color:red;
+}
+  
+       </style>
+</head>
+<body>
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec" id="time"></div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <h4 class="qu">1.Who is the founder of Java? </h4><h3 id="ans1"></h3>
+                <h4 class="qu">2.Expand <span><b>BIOS</b></span></h4><h3 id="ans2"></h3>
+                
+                <h4 class="qu">3.Find the odd man out </h4>
+                <h4> &nbsp;&nbsp;&nbsp;cobol&nbsp;  fortran&nbsp; Assembler&nbsp; pascal</h4><h3 id="ans3"></h3>
+                <h4 class="qu">4.If you are a client .I'm Your waiter for information.Who am I?  </h4>
+                <h3 id="ans4"></h3>
+                <h4 class="qu">5. Which error is difficult to find ?</h4><h3 id="ans5"></h3>
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+                
+            </div>
+            <div class="butto1">
+                <div class="btn btn-primary btn-lg" role="button" onclick="start()">Start Timer</div>
+                <div class="btn btn-primary btn-lg" role="button" onclick="answer()">Answer</div>
+                <div class="btn btn-primary btn-lg" role="button" onclick="stop()">Stop Timer</div>
+                <a href="../round-5/start.html" class="btn btn-primary btn-lg" role="button">Back</a></div>
+        </footer>
+        <div></div>
+    </div>
+    <script>
+        function answer(){
+            document.getElementById("ans1").innerText="Ans : James Gosling";
+            document.getElementById("ans2").innerText="Ans : Basic Input /Output System";
+            document.getElementById("ans3").innerText="Ans : Assembler";
+            document.getElementById("ans4").innerText="Ans: Server";
+            document.getElementById("ans5").innerText="Ans: Logic or Semantic";
+           
+        }
+        var timeElapsed = 30;
+        var myTimer = 30;
+        function start() {
+        myTimer = setInterval(function(){
+        timeElapsed -=1;
+        document.getElementById("time").innerText=timeElapsed;
+        }, 1000) ;
+        }
+        function stop() {
+            clearInterval(myTimer);
+        }   
+    </script>
+</body>
+</html>

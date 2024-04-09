@@ -1,0 +1,9 @@
+body{
+    min-height: 100vh;
+    font-size: 0.875rem;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+        url("../../asserts/images/round-4/b.jpeg") center/cover no-repeat fixed;
+    position: relative;
+    overflow-x: hidden;
+
+}

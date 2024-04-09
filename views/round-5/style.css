@@ -1,0 +1,25 @@
+body{
+    min-height: 100vh;
+    font-size: 0.875rem;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+        url("../../asserts/images/round-5/b.jpg") center/cover no-repeat fixed;
+    position: relative;
+    overflow-x: hidden;
+
+}
+.quiz_box{
+    margin-top:30%;
+    margin-left:50%;
+    width: 650px;
+    background-color: #fff;
+    color:black;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+}
+.quiz_box:hover{
+    
+    box-shadow: 15px 0px 20px 0px deeppink;
+}

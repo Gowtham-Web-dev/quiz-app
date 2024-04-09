@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App|Round-1</title>
+    <link rel="stylesheet" href="../../asserts/css/rounds/round-1/round1.css">
+    <script src="../../asserts/js/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+  $(".ans-btn").click(function(){
+    $(".option_list").toggle();
+  });
+});
+    </script>
+
+</head>
+<body>
+    <!-- <div class="h"><h1>QUTRIX-2K22</h1> -->
+    </div>
+    <div class="start_btn" ><button>Start Quiz</button></div>
+    <div class="info_box full">
+        <!-- <div class="info-title"><span>GENERAL ROUND</span></div>
+        <div class="info-list">
+            <h5>RULES</h5><ul type="circle">
+                <div class="info">•The Questions will be asked in both Clockwise and  Anticlockwise direction. </div>
+                <div class="info">•	Each question carries ten marks.</div>
+                <div class="info">•	If the team couldn’t answer the question , it will be passed to the next team.</div>
+                <div class="info">•	Passed question five marks.</div>
+                <div class="info">•	No negative marks.</div>
+                <div class="info">•	Judges decision will be final.</div>
+                <div class="info">•	Time Duration:</div>
+                <div class="info">Direct question-30 seconds will be provided.</div> 
+                <div class="info">Passed question-1 second will be provided.</div>
+        </ul>
+        </div> -->
+        <div class="img-letsGO">
+            <img src="../../asserts/images/letsgo.jpg" width="200%" alt="Let's GO">
+        </div>
+        <div class="buttons btn">
+            <button class="quit">Back</button>
+            <button class="restart" >Continue</button>
+        </div>
+    </div>
+    <div class="quiz_box">
+        <header>
+            <div class="title">GENERAL ROUND</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">10</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+          
+            </div>
+            <div class="option_list"style="display:none">
+          
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+                
+            </div>
+            <button class="ans-btn">Show Answer</button>
+            <button class="next_btn">Next</button>
+            
+        </footer>
+    </div>
+
+    
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+    
+        </div>
+        <div id="a"></div>
+        <div class="buttons">
+            <button class="restart" style="visibility:hidden;">Replay Quiz</button>
+            <a href="../rounds/rounds.html"><button class="quit">HOME</button></a>
+        
+        </div>
+    </div>
+    <script src="../../asserts/js/round-1/round-1-ques.js"></script>
+    <script src="../../asserts/js/round-1/round-1-script.js"></script>
+</body>
+</html>
